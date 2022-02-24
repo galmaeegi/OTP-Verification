@@ -37,6 +37,7 @@ public class SendOTPActivity extends AppCompatActivity {
                 if(inputMobile.getText().toString().trim().isEmpty()) {
                     Toast.makeText(SendOTPActivity.this, "Enter Mobile", Toast.LENGTH_SHORT).show();
                     return;
+
                 }
                 progressBar.setVisibility(View.VISIBLE);
                 buttonGetOTP.setVisibility(View.INVISIBLE);
