@@ -10,30 +10,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OTPVerification">
-
+        <activity
+            android:name=".sign_up"
+            android:exported="true" />
         <activity
             android:name=".VerifyOTPActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize"
-            />
-
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".SendOTPActivity"
+            android:exported="true"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize"
-            android:exported="true">
-                <intent-filter>
-                    <action android:name="android.intent.action.MAIN" />
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-                    <category android:name="android.intent.category.LAUNCHER" />
-                </intent-filter>
-
-       </activity>
-
-        <activity android:name=".MainActivity"
-            android:screenOrientation="portrait"
-            />
-
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
